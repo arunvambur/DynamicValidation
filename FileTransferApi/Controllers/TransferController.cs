@@ -15,10 +15,6 @@ namespace FileTransferApi.Controllers
     [Route("[controller]")]
     public class TransferController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
 
         private readonly ILogger<TransferController> _logger;
         private readonly ITransferServiceFactory _transferServiceFactory;
