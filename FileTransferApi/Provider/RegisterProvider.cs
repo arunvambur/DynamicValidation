@@ -49,22 +49,5 @@ namespace FileTransferApi.Provider
 
             builder.RegisterType<TransferServiceFactory>().As<ITransferServiceFactory>();
         }
-
-        //public static IEnumerable<ProviderConfiguration> GetAllProviders(string path)
-        //{
-        //    List<ProviderConfiguration> providerTypes = new List<ProviderConfiguration>();
-        //    foreach(var assembly in GetAssemblies(path))
-        //    {
-        //        var type = assembly.GetTypes().Where(t => t.BaseType == typeof(ProviderConfiguration)).SingleOrDefault();
-        //        if (type != null)
-        //        {
-        //            ProviderConfiguration providerType = (ProviderConfiguration)Activator.CreateInstance(type);
-        //            providerTypes.Add(providerType);
-        //        }
-        //    }
-
-        //    return providerTypes;
-
-        //}
     }
 }
